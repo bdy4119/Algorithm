@@ -6,22 +6,10 @@ class Solution {
         String answer = "";
         
         for(int i = 1; i < numLog.length; i++) {
-            if(num + 1 == numLog[i]) {
-                // num = numLog[i];
-                answer += "w";
-            }
-            else if(num - 1 == numLog[i]) {
-                // num = numLog[i];
-                answer += "s";
-            }
-            else if(num + 10 == numLog[i]) {
-                // num = numLog[i];
-                answer += "d";
-            }
-            else if(num - 10 == numLog[i]) {
-                // num = numLog[i];
-                answer += "a";
-            }
+            if(num + 1 == numLog[i]) answer += "w";
+            else if(num - 1 == numLog[i]) answer += "s";
+            else if(num + 10 == numLog[i]) answer += "d";
+            else if(num - 10 == numLog[i]) answer += "a";
             
             num = numLog[i];
         }
