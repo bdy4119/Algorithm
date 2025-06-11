@@ -3,9 +3,7 @@ class Solution {
         String answer = "";
         
         int partsIdx = 0;
-        for(String str : my_strings) {
-            answer += getString(parts[partsIdx++], str);
-        }
+        for(String str : my_strings) answer += getString(parts[partsIdx++], str);
         
         return answer;
     }
