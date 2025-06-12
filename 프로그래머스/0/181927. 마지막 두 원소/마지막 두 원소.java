@@ -8,9 +8,7 @@ class Solution {
         int secondLastNum = num_list[num_list.length -2];    // 그 이전 원소
         
         int idx = 0;
-        for(int i : num_list) {
-            answer[idx++] = i;
-        }
+        for(int i : num_list) answer[idx++] = i;
         
         answer[num_list.length] = lastNum > secondLastNum
                                     ? lastNum - secondLastNum : lastNum * 2;
