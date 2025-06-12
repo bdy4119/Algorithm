@@ -1,9 +1,9 @@
+import java.util.*;
+
 class Solution {
     public int[] solution(int[] arr, int k) {
-        int[] answer = new int[arr.length];
-        
-        for(int i = 0; i < answer.length; i++) answer[i] = k % 2 == 1 ? arr[i] * k : arr[i] + k;
-        
-        return answer;
+        return Arrays.stream(arr)
+                     .map(n -> (k % 2 == 1) ? n * k : n + k)
+                     .toArray();
     }
 }
