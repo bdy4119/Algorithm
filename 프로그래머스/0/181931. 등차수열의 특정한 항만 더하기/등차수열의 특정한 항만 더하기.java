@@ -1,9 +1,13 @@
-import java.util.stream.*;
-
 class Solution {
     public int solution(int a, int d, boolean[] included) {
-        return IntStream.range(0, included.length)
-                        .map(i -> included[i] ? a + i*d : 0)
-                        .sum();
+        int answer = 0;
+        
+        int num = 0;
+        for(boolean b : included) {
+            num += (num == 0 ? a : d);
+            answer += (b ? num : 0);
+        }
+        
+        return answer;
     }
 }
