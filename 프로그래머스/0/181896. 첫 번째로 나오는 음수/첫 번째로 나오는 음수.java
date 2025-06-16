@@ -4,10 +4,8 @@ class Solution {
         boolean b = false;
         
         for(int i : num_list) {
-            if(i < 0) {
-                b = true;
-                return answer;
-            }
+            if(i < 0) return answer;
+            
             answer++;
         }
         
