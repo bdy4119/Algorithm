@@ -3,7 +3,7 @@ class Solution {
         String answer = "";
         
         for(int i = 0; i < code.length(); i++) {
-            if(i % q == r) answer += code.charAt(i) + "";
+            if(i % q == r) answer += code.substring(i, i + 1);
         }
         
         return answer;
