@@ -8,7 +8,8 @@ class Solution {
         }
         
         for(int max : maxArr) {
-            if(answer < max) answer = max;
+            if(max == 0) continue;
+            else if(answer < max) answer = max;
         }
         
         return answer;
