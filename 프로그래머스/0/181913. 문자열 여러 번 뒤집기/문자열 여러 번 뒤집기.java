@@ -1,9 +1,7 @@
 class Solution {
     public String solution(String my_string, int[][] queries) {
-        String answer = "";
-        
         for(int i = 0; i < queries.length; i++) {
-            answer = "";
+            String answer = "";
             
             int s = queries[i][0];
             int e = queries[i][1];
@@ -18,6 +16,6 @@ class Solution {
             my_string = answer;
         }
         
-        return answer;
+        return my_string;
     }
 }
