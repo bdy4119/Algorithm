@@ -4,15 +4,14 @@ class Solution {
         
         int answerIdx = 0;
         for(String str : picture) {
-            String result = "";
+            StringBuilder result = new StringBuilder();
             
             for(int i = 0; i < str.length(); i++) {
-                for(int j = 0; j < k; j++) {
-                    result += str.substring(i, i + 1);
-                }
+                result.append(str.substring(i, i + 1).repeat(k));
             }
+            
             for(int j = 0; j < k; j++) {
-                answer[answerIdx++] = result;
+                answer[answerIdx++] = result.toString();
             }
         }
         
