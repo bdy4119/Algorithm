@@ -6,13 +6,10 @@ class Solution {
         for(String str : picture) {
             StringBuilder result = new StringBuilder();
             
-            for(int i = 0; i < str.length(); i++) {
+            for(int i = 0; i < str.length(); i++) 
                 result.append(str.substring(i, i + 1).repeat(k));
-            }
             
-            for(int j = 0; j < k; j++) {
-                answer[answerIdx++] = result.toString();
-            }
+            for(int j = 0; j < k; j++) answer[answerIdx++] = result.toString();
         }
         
         return answer;
