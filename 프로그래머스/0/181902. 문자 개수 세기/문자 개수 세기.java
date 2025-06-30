@@ -14,7 +14,7 @@ class Solution {
                 if(iCh == jCh) n++;
             }
             
-            if(b) answer[iCh % 65] = n;
+            if(b) answer[iCh % 'A'] = n;
             else answer[26 + iCh % 'a'] = n;
         }
         
