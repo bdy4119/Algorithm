@@ -6,6 +6,8 @@ class Solution {
         
         for(int i = 0; i < arr.length; i++) {
             int idx = 0;
+            int size = answer.size();
+            
             if(flag[i]) {
                 while(idx < arr[i]*2) {
                     answer.add(arr[i]);
@@ -13,9 +15,8 @@ class Solution {
                 }
             }
             else {
-                int size = answer.size();
-                
                 idx = answer.size();
+                
                 while(idx != size - arr[i]) {
                     answer.remove(idx - 1);
                     idx--;
