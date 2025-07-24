@@ -8,6 +8,7 @@ class Solution {
             if (attendance[i]) list.add(new int[]{rank[i], i});
         }
 
+         // rank 오름차순 정렬
         list.sort(Comparator.comparingInt(a -> a[0]));
 
         int a = list.get(0)[1];
